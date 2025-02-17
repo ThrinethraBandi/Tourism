@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoyogi Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.japan-guide.com/g18/3034_002_02.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Yoyogi Park</h1>
+        <div class="heritage-details">
+            <img src="https://www.japan-guide.com/g18/3034_002_11.jpg" alt="Tokyo National Museum">
+            <p>
+                Yoyogi Park, located in the Shibuya district of Tokyo, is one of the city’s largest and most popular parks, offering a green oasis in the midst of the urban sprawl. Originally developed for the 1964 Tokyo Olympics as the venue for the basketball events, the park has since transformed into a vibrant public space where locals and tourists alike come to relax, exercise, and enjoy nature. The expansive grounds feature wide lawns, tree-lined paths, ponds, and areas for picnicking, making it an ideal place to unwind or engage in outdoor activities.
+</p>
+<p>
+    The park is particularly well-loved for its diverse use of space. It attracts a wide variety of visitors, from joggers and cyclists to families with children. On weekends, you’ll often find groups practicing tai chi, yoga, or playing informal sports games. Musicians, street performers, and artists are common sights, adding to the park’s lively atmosphere. Yoyogi Park also hosts numerous events throughout the year, including cultural festivals, outdoor concerts, and flea markets, which bring the community together in a vibrant and celebratory way.
+</p>
+<p>
+    One of the most notable features of Yoyogi Park is its beautiful seasonal changes. In spring, it becomes a hotspot for hanami (cherry blossom viewing), with hundreds of cherry trees lining the park's pathways, drawing large crowds of people eager to enjoy the fleeting beauty of the blossoms. In autumn, the park's many trees turn vibrant shades of red, orange, and yellow, creating a stunning backdrop for visitors. Throughout the year, the park’s natural beauty offers a calming escape from the hustle and bustle of Tokyo’s fast-paced urban life.
+</p>
+<p>
+    Yoyogi Park is also home to the Meiji Jingu Shrine, one of Tokyo’s most important Shinto shrines, which lies at the park’s edge. Visitors can explore the tranquil forested paths leading to the shrine, making Yoyogi Park a perfect combination of nature, culture, and recreation. Whether for a peaceful walk, a fun day out with friends, or a cultural experience, Yoyogi Park is an essential green space that adds a refreshing contrast to the city’s urban landscape.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

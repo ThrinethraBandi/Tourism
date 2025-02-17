@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('https://images2.alphacoders.com/101/1011899.jpg') no-repeat center center/cover;
+            color: #f0f0f0;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-item h2 {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            padding: 10px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes for fadeIn effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="https://www.worldhistory.org/uploads/images/10823.jpg?v=1618593327-0" alt="Gallery Image 1">
+            <h2>Itsukushima Shrine</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.datocms-assets.com/101439/1726553255-itsukushima-shrine.webp?auto=format&crop=focalpoint&dpr=1.5&fit=crop&fp-x=0.46&fp-y=0.49&h=800&w=1200" alt="Gallery Image 2">
+            <h2>Itsukushima Shrine</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://japanupclose.web-japan.org/files/100441838.jpeg" alt="Gallery Image 3">
+            <h2>Itsukushima Shrine</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://travel.rakuten.com/contents/sites/contents/files/styles/max_1300x1300/public/2024-10/meiji-jingu-shrine_2.jpg?itok=HkxmWd-C" alt="Gallery Image 4">
+            <h2>Meiji Jingu</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://old-tokyo.info/wp-content/uploads/2017/10/mcover-1-1200x675.jpg" alt="Gallery Image 5">
+            <h2>Meiji Jingu</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Meiji_Jingu_2023-3.jpg/1920px-Meiji_Jingu_2023-3.jpg" alt="Gallery Image 6">
+            <h2>Meiji Jingu</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://a3.cdn.japantravel.com/photo/poi-5-214199/942x628!/tokyo-sensoji-temple-214199.jpg" alt="Gallery Image 6">
+            <h2>Sensō-ji</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://travelmate.tech/media/images/cache/tokyo_tempio_buddista_senso_ji_01_introduzione_jpg_1920_1080_cover_70.jpg" alt="Gallery Image 6">
+            <h2>Sensō-ji</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sensoji_2023.jpg/1280px-Sensoji_2023.jpg" alt="Gallery Image 6">
+            <h2>Sensō-ji</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.japan-guide.com/g18/3034_001_01.jpg" alt="Gallery Image 6">
+            <h2>Shinjuku Gyoen National Garden</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://scontent.fwgc2-1.fna.fbcdn.net/v/t39.30808-6/474526854_1289023279097900_994969265700282171_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=eRM9E78Uv7YQ7kNvgEtfDIe&_nc_oc=AdgVRPuKFt3yDAGVGErsRLPTmyVx0pYRWsP_X-2cucDKy1ypGi-bMHKLXe5OJxyyzMU&_nc_zt=23&_nc_ht=scontent.fwgc2-1.fna&_nc_gid=A627rKwvMV0cWz4umcTa5dC&oh=00_AYApCXpzrMlWcEak-PDyOiOyx4xAuiPRrL2ugJLBPzi9cw&oe=67B928F0" alt="Gallery Image 6">
+            <h2>Shinjuku Gyoen National Garden</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2021/02/Shinjuku-Gyoen-Greenhouse-by-CFM-770x578.jpg" alt="Gallery Image 6">
+            <h2>Shinjuku Gyoen National Garden</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.gotokyo.org/en/spot/78/images/78_0153_2_670x450.jpg" alt="Gallery Image 6">
+            <h2>Shibuya Scramble Crossing</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/5d3ee66abacfa00001df6854/ec2888de-9282-417f-a87d-b545a704fe21/pexels-wwarby-19693257.jpg?format=1500w" alt="Gallery Image 6">
+            <h2>Shibuya Scramble Crossing</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://media.timeout.com/images/105946468/1920/1440/image.webp" alt="Gallery Image 6">
+            <h2>Shibuya Scramble Crossing</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://www.japan-guide.com/g18/3064_01a.jpg" alt="Gallery Image 6">
+            <h2>Tokyo Skytree</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://uniquevenues-en.metro.tokyo.lg.jp/venues/21606/images/mainvisual_01.webp" alt="Gallery Image 6">
+            <h2>Tokyo Skytree</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://lirp.cdn-website.com/b6eb1c06/dms3rep/multi/opt/2024-skytree-02-1920w.jpg" alt="Gallery Image 6">
+            <h2>Tokyo Skytree</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://res-1.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1646014276/tokyo/H_00658_001" alt="Gallery Image 6">
+            <h2>Tokyo Tower</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn-imgix.headout.com/media/images/e3df4ea66b17c3f9303171ff7f64678d-24206-TokyoHelicopterTour-005.jpg?auto=format&w=1051.2&h=540&q=90&fit=fit" alt="Gallery Image 6">
+            <h2>Tokyo Tower</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://imagedelivery.net/Ahwf2rDz3ZiXm1qkpDKg1w/live/-/media/FE3D5ECDB54D4E86BDD1D90338B3775B.jpg/w=750?d=20231222T031306&w=750" alt="Gallery Image 6">
+            <h2>Tokyo Tower</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png/1024px-Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png" alt="Gallery Image 6">
+            <h2>Akihabara</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.cheapoguides.com/wp-content/uploads/sites/2/2020/05/akihabara-iStock-484915982-1280x600.jpg" alt="Gallery Image 6">
+            <h2>Akihabara</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="https://japanball.com/wp-content/uploads/2020/12/Akihabara-from-Wikimedia-Commons-scaled-1.jpg" alt="Gallery Image 6">
+            <h2>Akihabara</h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+        <div class="gallery-item">
+            <img src="" alt="Gallery Image 6">
+            <h2></h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

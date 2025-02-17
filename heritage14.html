@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial Palace</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.gotokyo.org/en/story/guide/a-noble-look-at-tokyos-imperial-palace-a-guide-to-the-royal-residence/images/10074_1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Imperial Palace</h1>
+        <div class="heritage-details">
+            <img src="https://images.wanderon.in/blogs/new/2024/12/imperial-palace-tokyo.jpg" alt="Tokyo National Museum">
+            <p>
+                The Imperial Palace, located in the heart of Tokyo, is the residence of the Japanese Imperial Family and a symbol of the country’s rich history and heritage. Nestled within a vast complex of beautiful gardens and grounds, the palace occupies the site of the former Edo Castle, which was home to the Tokugawa Shogunate. The palace is surrounded by impressive stone walls, moats, and traditional bridges, offering a striking contrast to the modern cityscape that surrounds it. The area is not only a historical landmark but also a center of political and cultural importance for Japan.
+</p>
+<p>
+    While the Imperial Palace itself is not open to the public on a regular basis, visitors can explore the East Gardens, which are part of the palace grounds and open year-round. The East Gardens feature meticulously maintained landscapes, including traditional Japanese gardens with ponds, trees, and seasonal flowers. Highlights include the Ninomaru Garden, designed to reflect the aesthetic principles of Japanese gardens, and the ruins of the Edo Castle’s former structures, providing insight into the historical significance of the site.
+</p>
+<p>
+    The Imperial Palace is also a place of ceremonial importance. It hosts events such as the Emperor’s birthday celebrations and the New Year’s Greeting, when the Imperial Family greets thousands of well-wishers from a balcony. These events allow visitors a rare glimpse into the royal family’s life and offer a chance to witness the cultural traditions that continue to shape Japan’s monarchy today. The palace remains a key institution in Japan’s constitutional monarchy, serving as a symbol of national unity.
+</p>
+<p>
+    In addition to its historical and cultural significance, the Imperial Palace is a peaceful green space in the heart of Tokyo, providing a quiet escape from the urban hustle. The juxtaposition of the palace’s traditional design with the surrounding modern skyscrapers offers a unique visual experience, blending the old and the new. Whether you’re visiting the gardens, enjoying the views of the palace, or taking part in special events, the Imperial Palace remains one of Tokyo’s most iconic and cherished landmarks.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

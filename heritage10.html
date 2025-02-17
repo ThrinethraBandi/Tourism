@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo National Museum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.yasui-archi.co.jp/en/wpctrl/wp-content/uploads/2024/02/20-4L.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Tokyo National Museum</h1>
+        <div class="heritage-details">
+            <img src="https://dr7f10k1l6bnm.cloudfront.net/wp-content/uploads/2024/12/visit-tokyo-national-museum.jpg" alt="Tokyo National Museum">
+            <p>
+                The Tokyo National Museum, located in Ueno Park, is Japan’s oldest and largest museum, housing an extensive collection of art, historical artifacts, and cultural treasures. Established in 1872, the museum showcases over 120,000 items, including samurai armor, ancient ceramics, delicate kimonos, and priceless Buddhist sculptures. The museum is divided into several wings, each dedicated to a different aspect of Japanese and Asian history, allowing visitors to explore the rich heritage of Japan from prehistoric times to the modern era.
+</p>
+<p>
+One of the highlights of the museum is the Honkan (Japanese Gallery), which offers a comprehensive overview of Japan’s artistic and cultural evolution. Visitors can admire beautifully preserved scroll paintings, calligraphy, and traditional tea ceremony utensils. The Gallery of Horyu-ji Treasures, another significant section, features exquisite Buddhist relics from the 7th century, including intricate bronze statues and delicate wooden carvings. The museum also frequently hosts special exhibitions that bring rare artifacts from around the world, making each visit a unique experience.
+</p>
+<p>
+Beyond Japanese history, the Tokyo National Museum also houses an impressive collection of Asian art. The Toyokan building displays artifacts from China, Korea, and Southeast Asia, including ancient bronze vessels, jade carvings, and elaborate textiles. Meanwhile, the Heiseikan wing focuses on Japan’s archaeological history, showcasing items such as Jomon pottery and samurai-era weaponry. With such a diverse and vast collection, the museum serves as a gateway to understanding the shared cultural influences between Japan and its neighboring countries.
+</p>
+<p>
+The museum’s serene surroundings enhance its appeal, with a beautifully landscaped Japanese garden featuring teahouses where visitors can enjoy a peaceful retreat from the bustling city. The museum shop offers high-quality souvenirs, including replicas of famous artworks and traditional crafts. Whether you are a history enthusiast, an art lover, or simply curious about Japan’s past, the Tokyo National Museum provides an immersive and enriching journey through the country’s cultural legacy.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edo-Tokyo Museum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://www.japan-guide.com/g18/3070_02.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            backdrop-filter: blur(10px);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #ff9a76;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            color: #333;
+            background: #ff9a76;
+            border-color: #ff9a76;
+        }
+
+        .content {
+            margin-top: 40px;
+            padding: 20px;
+            max-width: 1000px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            color: #ff9a76;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .heritage-details {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        .heritage-details img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .heritage-details p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #f0f0f0;
+            margin-top: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #f0f0f0;
+            padding: 15px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="heritage.html">Heritage</a>
+            <a href="hotel_booking.html">Hotel Booking</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1 align=center>Edo-Tokyo Museum</h1>
+        <div class="heritage-details">
+            <img src="https://www.matteoingiappone.it/wp-content/uploads/2019/02/Edo-Tokyo-Museum_3-e1549304218460@2x.jpg" alt="Tokyo National Museum">
+            <p>
+                The Edo-Tokyo Museum, located in the Ryogoku area of Tokyo, is a fascinating museum that explores the history and transformation of Tokyo from its origins as the small fishing village of Edo to its development into one of the world’s most influential megacities. The museum’s exhibits cover a wide range of topics, from the Edo period (1603-1868) to the post-war era, offering visitors a comprehensive understanding of how Japan’s capital evolved over centuries. With its impressive architecture and innovative exhibitions, the museum is a must-visit for those interested in Tokyo’s rich historical and cultural legacy.
+</p>
+<p>
+    One of the highlights of the museum is its scale models of the city, which provide a vivid depiction of what Edo looked like during its peak in the 17th and 18th centuries. The detailed models showcase Edo’s bustling streets, merchant districts, and iconic structures like the Nihonbashi Bridge. These models help visitors visualize how the city was structured and how it grew over time. Additionally, the museum displays a variety of artifacts, including samurai armor, traditional clothing, ukiyo-e prints, and tools, all of which provide a glimpse into daily life during the Edo period.
+</p>
+<p>
+    The museum’s exhibits also delve into the social and political changes that occurred during the Meiji Restoration and the modernization of Japan. Visitors can explore how Edo transitioned into Tokyo, with the shift from a feudal system to a more centralized government, and the introduction of Western technology and culture. The museum’s interactive displays and multimedia presentations bring these transformative periods to life, making complex historical events accessible and engaging for visitors of all ages.
+</p>
+<p>
+    Located near the Sumida River, the Edo-Tokyo Museum is a striking architectural landmark, with its bold design featuring a large, suspended structure that resembles a traditional storehouse. This innovative design reflects the museum’s mission to bridge the past with the present, offering a modern space to explore Tokyo’s rich history. Whether you're a history enthusiast or a first-time visitor, the Edo-Tokyo Museum offers a fascinating and immersive journey through Tokyo’s past, providing valuable insights into the city’s dynamic cultural and historical evolution.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tokyo Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
